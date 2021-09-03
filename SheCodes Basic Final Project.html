@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Plants</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(251, 250, 225) 11.2%,
+          rgb(206, 240, 185) 47.5%,
+          rgb(100, 163, 111) 100.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #13a10e;
+        max-width: 100%;
+        font-size: xx-large;
+      }
+      h2 {
+        text-align: center;
+        margin: 40px auto;
+        max-width: 100%;
+      }
+      img {
+        max-width: 30%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+      p {
+        text-align: center;
+        padding: 15px 25px;
+        background: #824e59;
+        color: cornsilk;
+        margin: 0 auto;
+        max-width: 40%;
+        display: block;
+        border-radius: 8px;
+        line-height: 30px;
+        font-family: monospace;
+      }
+      span {
+        font-weight: bolder;
+      }
+      hr {
+        color: cornsilk;
+        border-style: solid;
+      }
+      button {
+        background-color: #13a10e;
+        color: cornsilk;
+        display: block;
+        margin: 20px auto;
+        padding: 20px 30px;
+        border: cornsilk;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 30px;
+      }
+      button:hover {
+        color: #13a10e;
+        background: cornsilk;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 5px #13a10e;
+      }
+      footer {
+        text-align: right;
+        font-weight: bolder;
+        color: #824e59;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌵House Plants are my Passion🌱🌿</h1>
+    <h2>Here are some of my favorite house plants:</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/459/original/Prayer_Plant.jpg?1621869743"
+      alt="Prayer Plant"
+    />
+    <br />
+    <br />
+    <br />
+    <em>
+      <p>
+        This is a <span style="color: #2a3628">red prayer plant</span>. It's the
+        first house plant I ever owned and it's very special to me. My red
+        prayer plant brings me joy when I think about how small it was when I
+        purchased it compared to how large it has grown! The red prayer plant
+        does not need much sunlight to thrive, which is one of the reasons I
+        chose it.
+      </p>
+    </em>
+    <hr />
+    <br />
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/462/original/ponytail_palm.jpg?1621870176"
+      alt="Ponytail Palm"
+    />
+    <br />
+    <br />
+    <br />
+    <em>
+      <p>
+        The <span style="color: #2a3628">ponytail palm</span> is another low
+        light house plant and another one of my favorites! I love it's stubby
+        looking trunk and the fun frilly leaves that pop out from the top.
+        Another nickname for the ponytail palm is elephant's foot plant. During
+        the summer, I do put it on my front porch just to get it a little extra
+        sunlight.
+      </p>
+    </em>
+    <hr />
+    <br />
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/469/original/Christmas_Cactus.jpg?1621875502"
+      alt="Christmas Cactus"
+    />
+    <br />
+    <br />
+    <br />
+    <em>
+      <p>
+        The photo above is a
+        <span style="color: #2a3628">Christmas Cactus</span>. These are not your
+        typical cactus. Chrismas cacti come from the rainforest so they require
+        more water than a typical desert cactus. The pretty red blooms come out
+        in the late fall and winter. The more drooping limbs your Chrismtas
+        cactus has, the more blooms it will get!
+      </p>
+    </em>
+    <div>
+      <button>Need Help?</button>
+    </div>
+    <strong>
+      <a href="https://www.houseplant411.com/"
+        >click here to learn more from Houseplant 411</a
+      >
+    </strong>
+    <footer>Coded by Megan Smith</footer>
+    <script>
+      alert("Hello! I hope you love plants!");
+      function needHelp() {
+        let name = prompt("What is your name?");
+        let plants = prompt(
+          "Do you need help with houseplants or outdoor plants?"
+        );
+        let email = prompt("What is your email address?");
+        let h2 = document.querySelector("h2");
+        if (plants === "houseplants") {
+          h2.innerHTML = "Thanks, " + name + "! We will be in touch soon! 🌿";
+        } else {
+          h2.innerHTML = "Sorry, " + name + "! We can't help you! 😢";
+        }
+      }
+      let helpButton = document.querySelector("button");
+      helpButton.addEventListener("click", needHelp);
+    </script>
+  </body>
+</html>
